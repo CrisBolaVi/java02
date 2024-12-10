@@ -9,13 +9,7 @@ public class PrincipalAlumno {
     
     System.out.print("la nota del alumno es:");
     System.out.println(a.nota);
-
-    
-
-
-
-       
-       
+      
     }
 
 }
