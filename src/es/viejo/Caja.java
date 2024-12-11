@@ -1,3 +1,4 @@
+package es.viejo;
 public class Caja {
 int Ancho;
 int Largo;

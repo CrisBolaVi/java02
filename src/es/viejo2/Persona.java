@@ -1,4 +1,4 @@
-package es.curso4;
+package es.viejo2;
 
 public class Persona {
 

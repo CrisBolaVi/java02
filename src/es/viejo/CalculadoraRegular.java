@@ -1,3 +1,4 @@
+package es.viejo;
 public class CalculadoraRegular {
     public static double sumar(double a, double b){
         return a+b;

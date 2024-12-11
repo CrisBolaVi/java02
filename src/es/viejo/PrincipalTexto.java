@@ -1,3 +1,4 @@
+package es.viejo;
 public class PrincipalTexto {
     public static void main(String[] args) {
     //Hacer con un array de textos o cadenas para imprimir en la consola

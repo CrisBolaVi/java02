@@ -1,3 +1,4 @@
+package es.viejo;
 public class Factura {
 
      //en este caso puse int en valor pero es preferible poner double

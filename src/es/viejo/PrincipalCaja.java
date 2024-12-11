@@ -1,3 +1,4 @@
+package es.viejo;
 public class PrincipalCaja {
 
     public static void main(String[] args) {

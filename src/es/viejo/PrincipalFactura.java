@@ -1,3 +1,4 @@
+package es.viejo;
 public class PrincipalFactura {
 
     public static void main(String[] args) {
