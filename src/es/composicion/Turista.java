@@ -1,17 +1,9 @@
 package es.composicion;
-public class Turista {
-
-    //En esta clase creo tres propiedades, nombre maleta1 y 2
-   
-        private String nombre;
+public class Turista extends SuperTurista {
+        
         private Maleta maleta1;
-        private Maleta maleta2;
-        public String getNombre() {
-            return nombre;
-        }
-        public void setNombre(String nombre) {
-            this.nombre = nombre;
-        }
+        private Maleta maleta2;       
+       
         public Maleta getMaleta1() {
             return maleta1;
         }
@@ -25,7 +17,7 @@ public class Turista {
             this.maleta2 = maleta2;
         }
         public Turista(String nombre) {
-            this.nombre = nombre;
+            this.setNombre(nombre);
         }
       
         public double pesoTotal(){
