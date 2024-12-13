@@ -16,5 +16,7 @@ public Persona(String nombre) {
     this.nombre = nombre;
 }
 
-
+public void andar(){
+    System.out.println("andar a 5 Km por H");
+}
 }

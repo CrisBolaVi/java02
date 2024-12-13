@@ -2,21 +2,25 @@ package es.composicion;
 
 public class DeportistaPro extends Deportista {
 
-    private int Nivel;
+    private int nivel;
 
     public int getNivel() {
-        return Nivel;
+        return nivel;
     }
 
     public void setNivel(int nivel) {
-        Nivel = nivel;
+       this.nivel = nivel;
     }
 
     public DeportistaPro(String nombre, String deporte, int nivel) {
         super(nombre, deporte);
-        Nivel = nivel;
+        this.nivel = nivel;
     }
 
-    
-    
+    @Override
+    public void andar() {
+      
+        System.out.println("andar a 9 km/h");
+    }
+
 }
