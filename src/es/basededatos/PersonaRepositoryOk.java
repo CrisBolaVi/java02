@@ -23,7 +23,7 @@ public class PersonaRepositoryOk {
 					+ persona.getApellidos() + "'," + persona.getEdad() + ")");
 
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
+			
 			e.printStackTrace();
 		}
 	}
@@ -41,7 +41,7 @@ public class PersonaRepositoryOk {
 			sentencia.executeUpdate(consultaBorrar);
 
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
+			
 			e.printStackTrace();
 		}
 

@@ -35,6 +35,7 @@ public class baseciepersonas2 {
             //simplificación resumen: sentencia||( [aquí entre comillas texto fijo]*( + variables si son tipo texto necesitas agregar
             // comillas simples al principio y final de cada + que rodee la variable   + variable repetimos pero si es numérica sin comillas simples
             // + paréntesis de cierre del SQL con comillas finales para terminar de agregar el texto fijo )"* + último paréntesis sentencia )||
+            sc.close();
         } catch (SQLException e) {
 
             e.printStackTrace();

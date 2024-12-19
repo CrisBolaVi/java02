@@ -24,7 +24,7 @@ public class PersonaRepositoryOk2 {
 					+ persona.getApellidos() + "'," + persona.getEdad() + ")");
 
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
+			
 			e.printStackTrace();
 		}
 	}
@@ -42,10 +42,9 @@ public class PersonaRepositoryOk2 {
 			sentencia.executeUpdate(consultaBorrar);
 
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
+			
 			e.printStackTrace();
 		}
-
 	}
 
 	public ArrayList<Persona1> buscarTodos() {
@@ -70,7 +69,7 @@ public class PersonaRepositoryOk2 {
 			
 			
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
+			
 			e.printStackTrace();
 		} finally {
 			
@@ -78,7 +77,7 @@ public class PersonaRepositoryOk2 {
 				try {
 					conexion.close();
 				} catch (SQLException e) {
-					// TODO Auto-generated catch block
+					
 					e.printStackTrace();
 				}
 			}

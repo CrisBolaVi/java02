@@ -2,8 +2,10 @@ package es.basededatos;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.ArrayList;
 
 
 public class FacturaRepositoryNueva { 
@@ -37,6 +39,41 @@ try {
 
 e.printStackTrace();
 } 
+    }
+	public ArrayList<Factura> buscarTodos() {
 
+		ResultSet rs=null;
+        Connection conexion=null;
+        ArrayList<Factura> lista= new ArrayList<Factura>();
+		try {
+			//conecto a la base de datos
+			conexion = DriverManager.getConnection(DB_URL, USER, PASS);
+			//preparo la sentencia
+			Statement sentencia = conexion.createStatement();
+			//ejecuto
+			rs = sentencia.executeQuery("select * from Factura");
+			while (rs.next()) {
+				
+				Factura f= new Factura(rs.getInt("numero"),
+				rs.getString("concepto"), rs.getInt("importe"));
+				lista.add(f);
 }
+			
+			
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			
+			if (conexion!=null) {
+				try {
+					conexion.close();
+				} catch (SQLException e) {
+					
+					e.printStackTrace();
+				}
+			}
+		}
+		return lista;
+	}
+	
 }
